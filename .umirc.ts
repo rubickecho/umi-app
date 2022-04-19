@@ -4,10 +4,16 @@ export default defineConfig({
 	nodeModulesTransform: {
 		type: 'none',
 	},
-	layout: {},
+	layout: {
+		logout: () => {
+			//  TODO
+		}
+	},
 	routes: [
 		{ path: '/', component: '@/pages/index' },
-		{ patj: '/login', component: '@/pages/common/login/index.tsx'}
+		{ path: '/login', component: '@/pages/common/login/index.tsx'},
+		{ path: '/fragments', component: '@/pages/fragments/index.tsx'},
+		{ path: '/hoc', component: '@/pages/hoc/index.tsx'},
 	],
 	fastRefresh: {},
 	extraPostCSSPlugins: [
