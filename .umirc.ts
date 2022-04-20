@@ -7,17 +7,15 @@ export default defineConfig({
 	layout: {
 		logout: () => {
 			//  TODO
-		}
+		},
 	},
 	routes: [
 		{ path: '/', component: '@/pages/index' },
-		{ path: '/login', component: '@/pages/common/login/index.tsx'},
-		{ path: '/fragments', component: '@/pages/fragments/index.tsx'},
-		{ path: '/hoc', component: '@/pages/hoc/index.tsx'},
+		{ path: '/login', component: '@/pages/common/login/index.tsx' },
+		{ path: '/fragments', component: '@/pages/fragments/index.tsx' },
+		{ path: '/hoc', component: '@/pages/hoc/index.tsx' },
+		{ path: '/prop-types', component: '@/pages/prop-types/index.tsx' },
 	],
 	fastRefresh: {},
-	extraPostCSSPlugins: [
-		require('postcss-import'),
-		require('tailwindcss')
-	]
+	extraPostCSSPlugins: [require('postcss-import'), require('tailwindcss')],
 });
